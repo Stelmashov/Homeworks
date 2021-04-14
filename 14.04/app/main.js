@@ -6,16 +6,16 @@ function task1()
         let H;
         do
             {
-                L = prompt("Введите длинну");
-                W = prompt("Введите ширину");
-                H = prompt("Введите высоту");
+                L = prompt("Введите длинну (не больше 1000)");
+                W = prompt("Введите ширину (не больше 1000)");
+                H = prompt("Введите высоту (не больше 1000)");
             }while(L >= 1000 || W >= 1000 || H >= 1000)
         const V_banka = 16;
         let a = L * H;
         let b = W * H;
         let c = (a + b) * 2;
         let answer_1 = c / V_banka;
-        alert("Задача 1: На одну комнату нужно " + answer_1 + " банок краски");
+        alert("На одну комнату нужно " + answer_1 + " банок краски");
     }
 /*Задача 2*/
 function task2()
@@ -26,14 +26,14 @@ for(let i=0;i<=2;i++)
     {
         do
             {
-                A[i] = prompt("Введите цену А"+(i+1)+"")
+                A[i] = prompt("Введите цену А"+(i+1)+" (не больше 100)")
             }while(A[i] >= 100)
     }
 for(let i=0;i<=2;i++)
     {
         do
             {
-                B[i] = prompt("Введите цену B"+(i+1)+"")
+                B[i] = prompt("Введите цену B"+(i+1)+" (не больше 100)")
             }while(B[i] >= 100)
     }
 for (let i = 0; i <= 2; i++) {
@@ -59,26 +59,26 @@ for(let i=0;i<=2;i++)
     {
         answer_2 += A[i] * B[i];
     }
-alert(answer_2)
+alert("В наилучшем раскладе предприниматели получат "+answer_2+" рублей")
 }
 /*Задача 3*/
 function task3()
 {
-let Number;
+let Num;
 do
 {
-    Number = prompt();
-}while(Number >= 999999)
-let str_num = Number + "";
+    Num = prompt();
+}while(Num >= 999999)
+let str_num = Num + "";
 let u = 0;
 let o = 0;
 for(let i=0;i<3;i++)
     {
-        u += str_num[i];
+        u += Number(str_num[i]);
     }
 for(let i=3;i<6;i++)
     {
-        o += str_num[i];
+        o += Number(str_num[i]);
     }
 if(o == u)
     {
