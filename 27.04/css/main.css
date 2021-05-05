@@ -1,0 +1,56 @@
+.header {
+	height: 100px;
+	display: flex;
+	align-items: center;
+    background-color: #E0C1F6;
+}
+
+.info-container {
+	padding: 20px;
+	height: 200px;
+	border: 2px solid white;
+    align-items: center;
+}
+.btn {
+    color: grey;
+    background-color:#FCCFCF;
+    border-color: solid;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+
+.btn:active {
+    color: black;
+    background-color: white;
+    border-color: solid;
+}
+
+.form-control{
+    width: 400px;
+	display: flex;
+	margin-left: 93%;
+}
+
+.info-container {
+    background-color: #F8E2E2;
+    opacity: 80%;
+    height: 150px;
+}
+
+.location {
+    font-size: 200%;
+    padding-left: 35%;
+}
+
+.temperature {
+    font-size: 200%;
+    padding-left: 34%;
+}
+
+
+
+
